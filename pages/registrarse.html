@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CINEMAFLEX</title>
+    <link rel="shortcut icon" href="../faviconn.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/estilo.css" />
+  </head>
+
+  <header class="header">
+    <nav class="navegacion">
+      <a class="anclaLogo" href="../index.html">
+        <img
+          class="animacion"
+          src="../assets/img/285656_movie_icon.png"
+          alt="Logo de CINEMAFLEX"
+          width="40"
+          loading="lazy"
+        />
+        <span>CINEMAFLEX</span>
+        <!--etiqueta abierta multimedia, imagen-->
+      </a>
+      <!--lista desordenada ul/ lista ordenada ol-->
+    </nav>
+  </header>
+
+  <body>
+    <main class="mainRegistro">
+      <section class="seccionRegistrarse">
+        <h1 class="tituloRegistro">Registro</h1>
+        <form action="valida.php" method="post">
+          <div>
+            <input
+              class="botonInput"
+              type="text"
+              name="nombre"
+              id="nombre"
+              required
+              placeholder="Nombre"
+            />
+          </div>
+          <br />
+          <div>
+            <input
+              class="botonInput"
+              type="text"
+              name="apellido"
+              id="apellido"
+              placeholder="Apellido"
+              required
+            />
+          </div>
+          <br />
+          <div>
+            <input
+              class="botonInput"
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+              required
+            />
+          </div>
+          <br />
+          <div>
+            <input
+              class="botonInput"
+              type="password"
+              name="password"
+              id="password"
+              placeholder="Contraseña"
+              required
+            />
+          </div>
+          <br />
+          <div>
+            <label class="textoFinal" for="nacimiento"
+              >Fecha de Nacimiento:</label
+            >
+            <input
+              class="final"
+              type="date"
+              name="nacimiento"
+              id="nacimiento"
+              required
+            />
+          </div>
+          <br />
+          <div>
+            <label class="textoFinal" for="termino"
+              >Acepta terminos y condiciones</label
+            >
+            <input class="final" type="checkbox" name="termino" id="termino" />
+          </div>
+          <div>
+            <input class="boton" type="reset" value="Limpiar Campos" /><br />
+            <input class="boton" type="submit" value="Registrarse" />
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

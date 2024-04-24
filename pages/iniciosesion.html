@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CINEMAFLEX</title>
+    <link rel="shortcut icon" href="../faviconn.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/estilo.css" />
+  </head>
+
+  <header class="header">
+    <nav class="navegacion">
+      <a class="anclaLogo" href="../index.html">
+        <img
+          class="animacion"
+          src="../assets/img/285656_movie_icon.png"
+          alt="Logo de CINEMAFLEX"
+          width="40"
+          loading="lazy"
+        />
+        <span>CINEMAFLEX</span>
+        <!--etiqueta abierta multimedia, imagen-->
+      </a>
+      <!--lista desordenada ul/ lista ordenada ol-->
+    </nav>
+  </header>
+
+  <body class="fondo">
+    <main class="inicioSesion">
+      <section class="ingresoSesion">
+        <div>
+          <img
+            src="../assets/img/ui_user_profile_avatar_person_icon_208734.png"
+            alt="user"
+          />
+        </div>
+        <h1 class="tituloInicio">Inicio de Sesión</h1>
+
+        <form action=" valida.php" method="post">
+          <div>
+            <label class="user" for="user_name">Usuario:</label>
+            <input
+              type="text"
+              usuario="usuario"
+              id="usuario"
+              required
+              placeholder="Usuario"
+            />
+          </div>
+          <br />
+          <div>
+            <label class="user" for="password">Contraseña:</label>
+            <input
+              type="text"
+              contraseña="contraseña"
+              id="constraseña"
+              placeholder="Constraseña"
+              required
+            />
+          </div>
+          <br />
+          <div>
+            <input class="botonLogin" type="submit" value="Login" />
+          </div>
+
+          <div>
+            <h2 class="opcionCambiar">Olvidaste tu contraseña ?</h2>
+            <button class="botonContraseña">
+              <p class="opcionCambiar">Restauración de contraseña</p>
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
