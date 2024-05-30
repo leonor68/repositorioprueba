@@ -5,12 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CINEMAFLEX</title>
     <link rel="shortcut icon" href="faviconn.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="./css/estilo.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/bootstrap_estilo.css" />
   </head>
 
   <body class="body">
     <header class="header">
-      <nav class="navegacion">
+      <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+        <div class="container-fluid">
+          <a class="anclaLogo" href="#">
+            <img
+              class="animacion"
+              src="./assets/img/285656_movie_icon.png"
+              alt="Logo de CINEMAFLEX"
+              width="40"
+              loading="lazy"
+            />
+            <span>CINEMAFLEX</span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul
+              class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end"
+            >
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#Cartelera"
+                  >Cartelera</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/registrarse.html"
+                  >-Registrarse</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="./pages/iniciosesion.html"
+                  >-Iniciar Sesión</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--<nav class="navegacion">
         <a class="anclaLogo" href="#">
           <img
             class="animacion"
@@ -21,9 +73,9 @@
           />
           <span>CINEMAFLEX</span>
           <!--etiqueta abierta multimedia, imagen-->
-        </a>
-        <!--lista desordenada ul/ lista ordenada ol-->
-        <ul class="listaNav">
+      <!--</a>!-->
+      <!--lista desordenada ul/ lista ordenada ol-->
+      <!--<ul class="listaNav">
           <li>
             <a href="#Cartelera">Cartelera</a>
           </li>
@@ -34,7 +86,7 @@
             <a href="./pages/iniciosesion.html">Iniciar Sesión</a>
           </li>
         </ul>
-      </nav>
+      </nav>  !-->
     </header>
     <main id="flecha" class="main">
       <section class="principal">
@@ -52,92 +104,106 @@
       <section id="Cartelera" class="Top">
         <h3 class="tituloTop">Cartelera</h3>
         <div class="contenedorPelis">
-          <div>
-            <a href="./pages/detalle.html"
-              ><img
-                class="imgPelis"
-                src="./assets/img/pelis/moana_ver4.jpg"
-                alt="Moana_ver4"
-                loading="lazy"
-            /></a>
+         <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <a href="./pages/detalle.html"
+                  ><img
+                    class="imgPelis"
+                    src="./assets/img/pelis/moana_ver4.jpg"
+                    alt="Moana_ver4"
+                    loading="lazy"
+                /></a>
+              </div>
+              <div class="carousel-item">
+                <a href="./pages/detalle.html">
+                  <img
+                    class="imgPelis"
+                    src="./assets/img/pelis/doctor-extrano-1_vx88.jpg"
+                    alt="Doctor Strange"
+                    loading="lazy"
+                /></a>
+              </div>
+              <div class="carousel-item">
+                <a href="./pages/detalle.html">
+                  <img
+                    class="imgPelis"
+                    src="./assets/img/pelis/exodo.jpg"
+                    alt="Exodo"
+                    loading="lazy"
+                /></a>
+              </div>
+              <div class="carousel-item">
+                <a href="./pages/detalle.html"
+                  ><img
+                    class="imgPelis"
+                    src="./assets/img/pelis/ghostbusters_afterlife_two_ver2_xlg.jpg"
+                    alt="Ghostbusters"
+                    loading="lazy"
+                /></a>
+              </div>
+              <div class="carousel-item">
+                <a href="./pages/detalle.html">
+                  <img
+                    class="imgPelis"
+                    src="./assets/img/pelis/littlemermaide.jpg"
+                    alt="Little Mermaide"
+                /></a>
+              </div>
+              <div class="carousel-item">
+                <a href="./pages/detalle.html">
+                  <img
+                    class="imgPelis"
+                    src="./assets/img/pelis/terminator_dark_fate_xlg.jpg"
+                    alt="Terminator_dark"
+                    loading="lazy"
+                /></a>
+              </div>
+              <div class="carousel-item">
+                <a href="./pages/detalle.html">
+                  <img
+                    class="imgPelis"
+                    src="./assets/img/pelis/the_return_of_sherlock_holmes9781909175549.jpg"
+                    alt="The Return of Sherlock Holmes"
+                    loading="lazy"
+                /></a>
+              </div>
+              <div>
+                    <a href="./pages/detalle.html">
+                  <a href="./pages/detalle.html">
+                     <img
+                       class="imgPelis"
+                       src="./assets/img/pelis/thor_love_and_thunder_xlg.jpg"
+                       alt="Thor_love_and_Thunder" 
+                       loading="lazy"
+                      /></a>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExample"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-
-          <div>
-            <a href="./pages/detalle.html">
-              <img
-                class="imgPelis"
-                src="./assets/img/pelis/doctor-extrano-1_vx88.jpg"
-                alt="Doctor Strange"
-                loading="lazy"
-            /></a>
-          </div>
-
-          <div>
-            <a href="./pages/detalle.html">
-              <img
-                class="imgPelis"
-                src="./assets/img/pelis/exodo.jpg"
-                alt="Exodo"
-                loading="lazy"
-            /></a>
-          </div>
-
-          <div>
-            <a href="./pages/detalle.html"
-              ><img
-                class="imgPelis"
-                src="./assets/img/pelis/ghostbusters_afterlife_two_ver2_xlg.jpg"
-                alt="Ghostbusters"
-                loading="lazy"
-            /></a>
-          </div>
-
-          <div>
-            <a href="./pages/detalle.html">
-              <img
-                class="imgPelis"
-                src="./assets/img/pelis/littlemermaide.jpg"
-                alt="Little Mermaide"
-            /></a>
-          </div>
-
-          <div>
-            <a href="./pages/detalle.html">
-              <img
-                class="imgPelis"
-                src="./assets/img/pelis/terminator_dark_fate_xlg.jpg"
-                alt="Terminator_dark"
-                loading="lazy"
-            /></a>
-          </div>
-
-          <div>
-            <a href="./pages/detalle.html">
-              <img
-                class="imgPelis"
-                src="./assets/img/pelis/the_return_of_sherlock_holmes9781909175549.jpg"
-                alt="The Return of Sherlock Holmes"
-                loading="lazy"
-            /></a>
-          </div>
-
-          <div>
-            <a href="./pages/detalle.html">
-              <img
-                class="imgPelis"
-                src="./assets/img/pelis/thor_love_and_thunder_xlg.jpg"
-                alt="Thor_love_and_Thunder"
-                loading="lazy"
-            /></a>
-          </div>
-        </div>
-        <div>
-          <button class="botonCartelera">
-            <p>Anterior</p>
-          </button>
-          <button class="botonCartelera">
-            <p>Siguiente</p>
-          </button>
         </div>
         <section>
           <h3 class="tituloTop">Los Top 10 de la semana</h3>
@@ -236,6 +302,16 @@
             </div>
           </div>
         </section>
+        <section>
+          <h2 class="text-center pt-5 mb-5 fs-1 tituloTop">
+            Últimas incorporaciones
+          </h2>
+          <div class="container">
+            <section id="peliculasSection" class="row">
+              <!--aqui se agregaran las tarjetas de peliculas-->
+            </section>
+          </div>
+        </section>
       </section>
     </main>
 
@@ -296,5 +372,94 @@
         </div>
       </nav>
     </footer>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script>
+      // funcion que crea las tarjetas de peliculas
+      // Función para crear una tarjeta (card) de película
+      function crearTarjetaPelicula(pelicula) {
+        // Crear elementos de la tarjeta de película
+        // creamos la columna de bootstrap
+        const card = document.createElement("div");
+        card.classList.add(
+          "col-10",
+          "col-md-3",
+          "card-body",
+          "pelicula-section",
+          "pelicula-card"
+        );
+        // estamos creando la tarjeta
+        const cardInner = document.createElement("div");
+        cardInner.classList.add("card");
+        // creo la imagen de la tarjeta
+        const cardImg = document.createElement("img");
+        cardImg.classList.add("card-img-top");
+
+        cardImg.src = `https://image.tmdb.org/t/p/w500/${pelicula.poster_path}`;
+        cardImg.alt = pelicula.title;
+        cardImg.loading = "lazy";
+
+        // creamos el cuerpo de la tarjeta
+        const cardBody = document.createElement("div");
+        cardBody.classList.add("card-body");
+
+        const cardTitle = document.createElement("h6");
+        cardTitle.classList.add("card-title");
+        cardTitle.textContent = pelicula.title;
+
+        // Añadir elementos a la tarjeta de película
+        cardBody.appendChild(cardTitle);
+        cardInner.appendChild(cardImg);
+        cardInner.appendChild(cardBody);
+        // agrego la tarejta a la columna de bootstrap
+        card.appendChild(cardInner);
+
+        return card;
+      }
+
+      async function cargarPeliculas() {
+        const URL = "https://api.themoviedb.org/3/trending/movie/week";
+
+        // datos de la api
+        const options = {
+          method: "GET",
+          headers: {
+            accept: "application/json",
+            Authorization:
+              "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyY2M3MTk1MDliMzYzZWFlY2UzY2FkNzUxMjA4ZThlNCIsInN1YiI6IjY2MDc0ZWRhZTYyNzE5MDE3YzBiZmYxNyIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.csR2S703m9241-Z89WVZ8kLhQ601sabpymSCKZt5Mqs",
+          },
+        };
+
+        try {
+          // Realizamos una petición fetch a la API para obtener las películas populares
+          const response = await fetch(`${URL}`, options);
+          console.log(response);
+
+          const data = await response.json(); // Convertimos la respuesta a JSON
+          console.log(data);
+
+          const movies = data.results; // Extraemos las películas de la respuesta, array de objetos de peliculas
+          console.log(movies);
+
+          const peliculasSection = document.getElementById("peliculasSection");
+          peliculasSection.innerHTML = ""; // Limpiamos el contenido previo del contenedor
+          movies.forEach((movie) => {
+            const peliculaCard = crearTarjetaPelicula(movie); // Iteramos sobre las películas
+            peliculasSection.appendChild(peliculaCard); // Añadimos la tarjeta de película al contenedor
+          }); // Iteramos sobre las películas
+        } catch (error) {
+          console.error(error);
+        }
+      }
+
+      // Llamar a la función para agregar las tarjetas de películas cuando el DOM esté cargado
+      // document.addEventListener("DOMContentLoaded", agregarTarjetasPeliculas);
+      // agregarTarjetasPeliculas();
+      document.addEventListener("DOMContentLoaded", () => {
+        cargarPeliculas();
+      });
+      // cargarPeliculas.addEventListener('click', cargarPeliculas);
+    </script>
+
+    <script src="js/test.js"></script>
   </body>
 </html>

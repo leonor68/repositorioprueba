@@ -1,0 +1,604 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap);
+
+* {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes moving {
+  from {
+    -webkit-transform: rotate (0deg);
+    transform: rotateY(0deg);
+  }
+
+  50% {
+    -webkit-transform: rotate (180deg);
+    transform: rotateY(180deg);
+  }
+
+  to {
+    -webkit-transform: rotate (360deg);
+    transform: rotateY(360deg);
+  }
+}
+
+.anclaLogo {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  text-decoration: none;
+  color: black;
+  font-weight: 400;
+  font-size: 1;
+  flex-wrap: wrap;
+}
+
+.body {
+  background-color: rgb(52, 1, 1);
+  height: 100%;
+}
+.animacion {
+  animation-name: moving;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+.main {
+  .principal {
+    background-image: url(../assets/img/movie-theater-2093264_640.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    .tituloPrincipal {
+      text-align: center;
+      padding: 20px;
+      font-weight: 800;
+      font-size: 2rem;
+      color: lightyellow;
+    }
+
+    .tituloSecundario {
+      text-align: center;
+      padding: 20px;
+      forced-color-adjust: grey;
+      font-weight: 600;
+      color: lightyellow;
+    }
+
+    .botonRegistro {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background-color: rgba(224, 164, 12, 0.959);
+      color: lightyellow;
+      border: 1px black solid;
+      padding: 1rem 2rem;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      font-weight: 500;
+      text-decoration: none;
+    }
+    .botonRegistro:hover {
+      background-color: rgba(223, 49, 10, 0.959);
+      color: white;
+    }
+    .btn btn-warning {
+      padding: 0px 0px 10px 0px;
+    }
+  }
+}
+.secundaria {
+  background-color: rgba(162, 10, 41, 0.855);
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .contenerBuscar {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+
+    .segundoTexto {
+      padding: 5px;
+      border-radius: 5px;
+      width: 300px;
+      display: flex;
+      text-align: center;
+      flex-wrap: wrap;
+    }
+
+    .botonSearch {
+      padding: 0px 10px;
+      color: white;
+      text-align: center;
+      border-radius: 5px;
+      border: 1px black solid;
+      background-color: rgba(224, 164, 12, 0.959);
+      margin-top: 5px;
+      display: flex;
+      justify-content: space-evenly;
+      flex-wrap: wrap;
+    }
+    .botonSearch:hover {
+      background-color: rgba(223, 49, 10, 0.959);
+      color: white;
+    }
+  }
+}
+
+.contenedorPelis {
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 100px;
+  div {
+    width: 300px;
+    height: 400px;
+    box-shadow: 15px 18px 37px -15px rgba(222, 202, 202, 0.75);
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+      gap: 40px;
+    }
+  }
+}
+
+.botonCartelera {
+  padding: 0px 10px;
+  box-sizing: content-box;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 40px;
+  align-content: center;
+  background-color: burlywood;
+  color: black;
+  border-radius: 2px;
+}
+.botonCartelera:hover {
+  background-color: rgba(223, 49, 10, 0.959);
+  color: white;
+}
+
+.tituloTop {
+  margin-top: 40px;
+  margin-bottom: 20px;
+  text-align: center;
+  margin-bottom: 10px;
+  color: lightyellow;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: rgb(58, 2, 2);
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(169, 72, 72);
+}
+
+.contenedorTop {
+  overflow-y: hidden;
+  overflow-x: scroll;
+  width: 100%;
+  display: flex;
+  padding: 0px 0px 40px 0px;
+  box-sizing: content-box;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  gap: 30px;
+  div {
+    width: 200px;
+    min-width: 200px;
+    height: 300px;
+    cursor: pointer;
+    justify-content: space-between;
+    flex-direction: column;
+    box-shadow: 15px 18px 37px -15px rgba(222, 202, 202, 0.75);
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 10px;
+      gap: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contenedorTop {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    div {
+      width: 200px;
+      min-width: 200px;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+  }
+}
+
+.col-10 {
+  .md-3 {
+    .card-body {
+      box-sizing: content-box;
+      color: rgb(12, 12, 13);
+      /**flex: 1 1 auto;*/
+      padding: 1rem 1rem 1rem;
+      .pelicula-section {
+        width: 80%;
+        height: 80%;
+
+        .pelicula-card {
+          .card {
+            .card-img-top {
+              width: 200px;
+              height: 400px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.card {
+  .card-body {
+    color: rgb(12, 12, 13);
+    /**flex: 1 1 auto;*/
+    padding: 1rem 1rem;
+    box-shadow: 15px 18px 37px -15px rgba(222, 202, 202, 0.75);
+    .card {
+      width: 400px;
+      height: 600px;
+      gap: 60px;
+    }
+  }
+}
+
+.footerPrincipio {
+  background-color: rgba(224, 164, 12, 0.959);
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: row;
+  background-size: cover;
+  color: black;
+  margin-top: 10px;
+  padding-top: 0px;
+  overflow: visible;
+
+  z-index: 10;
+
+  .navegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 20px;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footerPrincipio {
+    flex-direction: column;
+
+    .navegacion {
+      flex-direction: column;
+
+      .lista {
+        flex-direction: column;
+      }
+    }
+  }
+}
+
+.lista {
+  list-style: none;
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+
+  .mapa {
+    display: flex;
+    align-items: end;
+  }
+}
+
+.lista li a {
+  text-decoration: none;
+  padding: 2px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  margin-left: 5px;
+  margin-right: 5px;
+  color: black;
+  font-size: 0.8rem;
+}
+.redes {
+  background-color: rgba(224, 164, 12, 0.959);
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.mainRegistro {
+  background-image: url(../assets/img/9568482.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 128vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .seccionRegistrarse {
+    background-color: rgb(12, 12, 12);
+    box-sizing: content-box;
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    padding: 20px;
+    align-items: center;
+    border-radius: 10px;
+    border: 4px black;
+    .mb-3 {
+      .form-label-b {
+        font-size: 0.8rem;
+        color: aliceblue;
+      }
+      .form-control {
+        font-size: 0.7rem;
+        color: aliceblue;
+      }
+      .asterisco {
+        color: black;
+      }
+    }
+  }
+
+  .tituloRegistro {
+    color: lightyellow;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+
+  .botonInput {
+    border-radius: 5px;
+    box-sizing: content-box;
+    border: 3px solid rgb(121, 117, 117);
+    height: 20px;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .boton {
+    background-color: rgb(224, 224, 64);
+    color: black;
+    width: 150px;
+    border-radius: 30px;
+    font-size: 0.8rem;
+  }
+  .boton:hover {
+    background-color: rgb(133, 24, 5);
+    color: white;
+  }
+  .final {
+    color: rgb(8, 8, 8);
+    border: 3px solid rgb(121, 117, 117);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: 500;
+    font-size: 0.5rem;
+  }
+
+  .textoFinal {
+    color: lightyellow;
+    text-align: justify;
+    font-size: 0.8rem;
+  }
+}
+
+.error-message {
+  background-color: rgb(170, 174, 176);
+  color: red;
+}
+
+@media screen and (width <=768px) {
+  .mainRegistro {
+    background-image: url(../assets/img/pexels-tima-miroshnichenko-7991273.jpg);
+
+    .seccionRegistrarse {
+      background-color: rgb(23, 23, 23);
+    }
+  }
+}
+
+.descripcion {
+  padding: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+
+  .contenedorDetalle {
+    width: 95%;
+    box-sizing: content-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .imagenKung {
+    width: 300px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 5px;
+    top: 10px;
+  }
+  .kungfuVideo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.contenedorResumen {
+  background-color: rgb(109, 5, 62);
+  color: lightyellow;
+  display: flex;
+  display: inline-block;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 50px;
+}
+
+@media screen and (width <=768px) {
+  .descripcion {
+    .kungfuVideo {
+      flex-direction: column;
+      row-gap: 20px;
+    }
+    iframe {
+      width: 95%;
+      height: 300px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+}
+.fondo {
+  background-color: aliceblue;
+}
+
+.nav {
+  background-color: rgba(229, 168, 15, 0.959);
+  height: 10vh;
+}
+.inicioSesion {
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+
+  .ingresoSesion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(168, 164, 165);
+    box-sizing: content-box;
+    width: 300px;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 1rem;
+    border: 4px black;
+
+    .tituloInicio {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 0.8rem;
+      color: black;
+    }
+  }
+  .form-label {
+    font-size: 0.8rem;
+  }
+  .form-control {
+    font-size: 0.7rem;
+  }
+
+  .form-check {
+    color: blueviolet;
+    font-size: 0.8rem;
+  }
+  .div {
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+.user {
+  font-size: 0.8rem;
+}
+/**.botonLogin:hover {
+  background-color: rgb(80, 80, 97);
+}*/
+
+.btn btn-primary {
+  padding: 0px 0px 5px 0px;
+}
+
+.opcionCambiar {
+  font-size: 0.7rem;
+  color: black;
+  padding: 10px;
+}
+
+.botonContraseña {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.error-message {
+  font-size: small;
+}
+
+@media screen and (width <=768px) {
+  .inicioSesion {
+    background-image: none;
+    background-color: aliceblue;
+  }
+}
