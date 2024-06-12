@@ -95,6 +95,7 @@
       color: white;
     }
     .btn btn-warning {
+      background-color: rgba(223, 49, 10, 0.959);
       padding: 0px 0px 10px 0px;
     }
   }
@@ -304,6 +305,23 @@
     align-items: center;
     margin-right: 20px;
     width: 100%;
+  }
+  .botonRegistro {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgba(223, 49, 10, 0.959);
+    color: lightye yellow;
+    border: 1px black solid;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  .botonRegistro:hover {
+    background-color: rgba(235, 86, 173, 0.959);
+    color: white;
   }
 }
 
@@ -606,5 +624,122 @@
   }
   .ingresoSesion {
     margin-right: 20px;
+  }
+}
+
+.main {
+  .tituloAdministrador {
+    text-align: center;
+    padding: 20px;
+    font-weight: 800;
+    font-size: 2rem;
+    color: lightyellow;
+  }
+  .nombreCampo {
+    text-align: left;
+    margin-left: 20px;
+    padding: 5px;
+    font-weight: 700;
+    font-size: 1rem;
+    color: lightyellow;
+  }
+  .form-floating.mb-3 {
+    margin-left: 15px;
+    margin-right: 80px;
+  }
+  .form-floating {
+    margin-left: 15px;
+    margin-right: 80px;
+  }
+  .input-group.mb-3 {
+    padding: 0px;
+    margin-left: 15px;
+    .input-group-text {
+      font-size: 0.8rem;
+    }
+  }
+  /**.btn.btn-warning {
+    margin-left: 15px;
+  }*/
+
+  .botonRegistro {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 15px;
+    background-color: rgba(224, 164, 12, 0.959);
+    color: rgb(12, 12, 12);
+    border: 1px black solid;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-decoration: none;
+  }
+  .botonRegistro:hover {
+    background-color: rgba(223, 49, 10, 0.959);
+    color: white;
+  }
+}
+
+.contendedorListado {
+  padding: 20px;
+}
+
+.listadoTitulo {
+  color: lightyellow;
+}
+.table {
+  background-color: rgb(176, 90, 139);
+  height: 600px;
+  margin-right: 50px;
+  /**caption-side: bottom;*/
+  /**border-collapse: collapse*/
+  .encabezado {
+    padding: 40px;
+    font-size: 1rem;
+  }
+  .textoTabla {
+    font-size: 0.8 rem;
+    color: black;
+  }
+}
+
+.botonModificar {
+  margin-left: 15px;
+  background-color: rgba(224, 164, 12, 0.959);
+  color: rgb(12, 12, 12);
+  border: 1px black solid;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.botonEliminar {
+  text-align: center;
+  margin-left: 15px;
+  background-color: rgba(239, 45, 67, 0.959);
+  color: rgb(12, 12, 12);
+  border: 1px black solid;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+@media screen and (width <=768px) {
+  .botonModificar {
+    width: 70%;
+    text-align: center;
+    font-size: 0.5rem;
+    padding: 0px 0px 0px 0px;
+  }
+  .botonEliminar {
+    width: 70%;
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+    font-size: 0.5rem;
   }
 }
