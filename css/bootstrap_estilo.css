@@ -1,7 +1,7 @@
 @import url(https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap);
 
 * {
-  font-family: "Roboto Slab", serif;
+  font-family: "Roboto Slab", sans-serif;
   font-optical-sizing: auto;
   font-weight: 600;
   font-style: normal;
@@ -27,6 +27,10 @@
     -webkit-transform: rotate (360deg);
     transform: rotateY(360deg);
   }
+}
+
+.header {
+  position: sticky;
 }
 
 .anclaLogo {
@@ -460,11 +464,12 @@
     text-align: justify;
     font-size: 0.8rem;
   }
-}
-
-.error-message {
-  background-color: rgb(170, 174, 176);
-  color: red;
+  .error-message {
+    padding: 0px 0px 0px 0px;
+    font-size: 0.8rem;
+    background-color: rgb(170, 174, 176);
+    color: red;
+  }
 }
 
 @media screen and (width <=768px) {
@@ -472,6 +477,7 @@
     background-image: url(../assets/img/pexels-tima-miroshnichenko-7991273.jpg);
 
     .seccionRegistrarse {
+      width: 70%;
       background-color: rgb(23, 23, 23);
     }
   }
@@ -588,6 +594,12 @@
     justify-content: flex-start;
     align-items: flex-start;
   }
+  .error-message {
+    padding: 0px 0px 0px 0px;
+    font-size: 0.8rem;
+    background-color: rgb(170, 174, 176);
+    color: red;
+  }
 }
 .user {
   font-size: 0.8rem;
@@ -612,22 +624,32 @@
   align-items: center;
 }
 .error-message {
-  font-size: small;
+  padding: 0px 0px 0px 0px;
+  font-size: 0.8rem;
+  background-color: rgb(170, 174, 176);
+  color: red;
 }
 
 @media screen and (width <=768px) {
   .inicioSesion {
     background-image: none;
     background-color: aliceblue;
-    width: 90%;
-    height: 90%;
+    margin-left: 10px;
   }
   .ingresoSesion {
-    margin-right: 20px;
+    margin-left: 50px;
+  }
+  .mb-3 {
+    width: 70%;
+  }
+  .error-message {
+    background-color: none;
+    font-size: 0.5rem;
   }
 }
 
 .main {
+  box-sizing: content-box;
   .tituloAdministrador {
     text-align: center;
     padding: 20px;
@@ -652,15 +674,34 @@
     margin-right: 80px;
   }
   .input-group.mb-3 {
-    padding: 0px;
+    margin-top: 0px;
     margin-left: 15px;
     .input-group-text {
       font-size: 0.8rem;
     }
   }
+  .error-message {
+    padding: 0px 0px 0px 0px;
+    font-size: 0.8rem;
+    background-color: rgb(170, 174, 176);
+    color: red;
+  }
+
   /**.btn.btn-warning {
     margin-left: 15px;
   }*/
+
+  .boton-image {
+    margin-right: 320px;
+    border-radius: 5px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    background-color: white;
+    font-size: 0.8rem;
+    .image-text {
+      font-size: 0.8rem;
+    }
+  }
 
   .botonRegistro {
     justify-content: center;
@@ -679,6 +720,24 @@
   .botonRegistro:hover {
     background-color: rgba(223, 49, 10, 0.959);
     color: white;
+  }
+}
+@media screen and (width <=768px) {
+  .boton-image {
+    width: 80%;
+    margin-right: 320px;
+    border-radius: 5px;
+    margin-left: 15px;
+    margin-bottom: 10px;
+    background-color: white;
+    font-size: 0.8rem;
+
+    .image-text {
+      font-size: 0.5rem;
+    }
+  }
+  .error-message {
+    padding: 10px 0px 0px 0px;
   }
 }
 
@@ -735,11 +794,13 @@
     text-align: center;
     font-size: 0.5rem;
     padding: 0px 0px 0px 0px;
+    margin-left: 10px;
   }
   .botonEliminar {
     width: 70%;
     text-align: center;
     padding: 0px 0px 0px 0px;
     font-size: 0.5rem;
+    margin-left: 10px;
   }
 }
