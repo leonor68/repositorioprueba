@@ -657,25 +657,29 @@
     font-size: 2rem;
     color: lightyellow;
   }
+  .form-label-c {
+    color: lightyellow;
+  }
   .nombreCampo {
     text-align: left;
-    margin-left: 20px;
+    /**margin-left: 20px;*/
     padding: 5px;
     font-weight: 700;
     font-size: 1rem;
     color: lightyellow;
   }
-  .form-floating.mb-3 {
+
+  /**.form-floating.mb-3 {
+    /**margin-left: 15px;
+    margin-right: 80px;}*/
+
+  /**.form-floating {
     margin-left: 15px;
     margin-right: 80px;
-  }
-  .form-floating {
-    margin-left: 15px;
-    margin-right: 80px;
-  }
+  }*/
   .input-group.mb-3 {
     margin-top: 0px;
-    margin-left: 15px;
+    /** margin-left: 15px;*/
     .input-group-text {
       font-size: 0.8rem;
     }
@@ -687,19 +691,19 @@
     color: red;
   }
 
-  /**.btn.btn-warning {
+  .btn.btn-warning {
     margin-left: 15px;
-  }*/
-
-  .boton-image {
-    margin-right: 320px;
-    border-radius: 5px;
-    margin-left: 15px;
-    margin-bottom: 10px;
-    background-color: white;
-    font-size: 0.8rem;
-    .image-text {
+  }
+  .form-floating-image {
+    .boton-image {
+      border-radius: 5px;
+      margin-left: 15px;
+      margin-bottom: 10px;
+      background-color: white;
       font-size: 0.8rem;
+      .image-text {
+        font-size: 0.8rem;
+      }
     }
   }
 
@@ -707,7 +711,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    margin-left: 15px;
+    /*margin-left: 15px;*/
     background-color: rgba(224, 164, 12, 0.959);
     color: rgb(12, 12, 12);
     border: 1px black solid;
@@ -723,17 +727,20 @@
   }
 }
 @media screen and (width <=768px) {
-  .boton-image {
-    width: 80%;
-    margin-right: 320px;
-    border-radius: 5px;
-    margin-left: 15px;
-    margin-bottom: 10px;
-    background-color: white;
-    font-size: 0.8rem;
+  .main {
+    .form-floating-image {
+      .boton-image {
+        width: 80%;
+        margin-right: 0px;
+        border-radius: 5px;
 
-    .image-text {
-      font-size: 0.5rem;
+        margin-bottom: 10px;
+        background-color: white;
+        font-size: 0.8rem;
+        .image-text {
+          font-size: 0.5rem;
+        }
+      }
     }
   }
   .error-message {
@@ -769,7 +776,7 @@
   background-color: rgba(224, 164, 12, 0.959);
   color: rgb(12, 12, 12);
   border: 1px black solid;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem 1rem 1rem;
   border-radius: 5px;
   font-size: 0.8rem;
   font-weight: 500;
@@ -782,25 +789,28 @@
   background-color: rgba(239, 45, 67, 0.959);
   color: rgb(12, 12, 12);
   border: 1px black solid;
-  padding: 1rem 2rem;
+  padding: 1rem 1rem 1rem 1rem;
   border-radius: 5px;
   font-size: 0.8rem;
   font-weight: 500;
   text-decoration: none;
 }
 @media screen and (width <=768px) {
+  .table {
+    width: 70%;
+  }
   .botonModificar {
     width: 70%;
     text-align: center;
     font-size: 0.5rem;
     padding: 0px 0px 0px 0px;
-    margin-left: 10px;
+    margin-left: 0px;
   }
   .botonEliminar {
     width: 70%;
     text-align: center;
     padding: 0px 0px 0px 0px;
     font-size: 0.5rem;
-    margin-left: 10px;
+    margin-left: 0px;
   }
 }

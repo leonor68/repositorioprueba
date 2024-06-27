@@ -63,38 +63,55 @@
       </nav>
     </header>
     <main id="flecha" class="main">
-      <h1 class="tituloAdministrador">
-        Sección para administrar las películas del portal
-      </h1>
-      <form id="loginForm">
-        <h4 class="nombreCampo">Titulo</h4>
-        <div class="form-floating mb-3">
-          <input type="titulo" class="form-control" id="titulo_peli" />
-          <div id="tituloError" class="error-message"></div>
-        </div>
-        <h4 class="nombreCampo">Duración</h4>
-        <div class="form-floating">
-          <input type="text" class="form-control" id="duracion" />
-          <div id="duracionError" class="error-message"></div>
-        </div>
-        <h4 class="nombreCampo">Sinopsis</h4>
-        <div class="form-floating">
-          <textarea
-            class="form-control"
-            placeholder="Leave a comment here"
-            id="resumen"
-          ></textarea>
-          <div id="resumenError" class="error-message"></div>
-        </div>
-        <h4 class="nombreCampo">Imagen</h4>
-        <div class="form-floating, boton-image">
-          <input type="file" class="form-control, image-text" id="imagen" />
-          <div id="imagenError" class="error-message"></div>
-        </div>
+      <h1 class="tituloAdministrador">Gestión de películas del portal</h1>
+      <section class="container">
+        <form
+          class="row"
+          id="loginForm"
+          action="post"
+          enctype="multipart/form-data"
+        >
+          <div class="mb-3 col-12 col-md-4">
+            <label for="titulo" class="form-label-c">Titulo</label>
+            <input type="text" class="form-control" id="titulo_peli" />
+            <div
+              id="tituloError"
+              class="error-message"
+              name="titulo_peli"
+            ></div>
+          </div>
 
-        <!--<div class="input-group mb-3">-->
-        <!--<span class="input-group-text">Seleccionar archivo</span>-->
-        <!--<div class="form-floating-image, boton-image">
+          <div class="mb-3 col-12 col-md-4">
+            <label for="duracion" class="form-label-c">Duración</label>
+            <input
+              type="text"
+              class="form-control"
+              id="duracion"
+              placeholder="2h 44m"
+              name="duracion"
+            />
+            <div id="duracionError" class="error-message"></div>
+          </div>
+
+          <div>
+            <label for="sinopsis" class="form-label-c">Sinopsis</label>
+            <textarea
+              class="form-control"
+              id="resumen"
+              name="resumen"
+            ></textarea>
+            <div id="resumenError" class="error-message"></div>
+          </div>
+
+          <div class="form-floating-image, boton-image, image-text">
+            <label for="imagen" class="form-label-c">Imagen</label>
+            <input type="file" class="form-control" id="imagen" name="imagen" />
+            <div id="imagenError" class="error-message"></div>
+          </div>
+
+          <!--<div class="input-group mb-3">-->
+          <!--<span class="input-group-text">Seleccionar archivo</span>-->
+          <!--<div class="form-floating-image, boton-image">
             <input
               type="file"
               id="imagen"
@@ -102,16 +119,23 @@
               seleccionado"
             />
           </div>-->
-        <!--<div id="imagenError" class="error-message"></div>-->
-        <!-- </div>--->
-        <button type="submit" class="botonRegistro">Agregar pelicula</button>
-        <input class="botonRegistro" type="reset" value="Clean" />
-      </form>
+          <!--<div id="imagenError" class="error-message"></div>-->
+          <!-- </div>--->
+          <div class="mb-3 mt-5">
+            <button type="submit" class="botonRegistro">
+              Agregar pelicula
+            </button>
+            <input class="botonRegistro" type="reset" value="Clean" />
+          </div>
+        </form>
+      </section>
+
       <section class="contenedorListado">
         <h2 class="listadoTitulo">Listado de Películas</h2>
         <table class="table">
           <thead class="encabezado">
             <tr>
+              <th scope="col">Id_Pelicula</th>
               <th scope="col">Titulo</th>
               <th scope="col">Duracion</th>
               <th scope="col">Sinopsis</th>
@@ -121,6 +145,7 @@
           </thead>
           <tbody>
             <tr>
+              <th scope="row"><a>1</a></th>
               <th scope="row"><a>Kung Fu Panda 4</a></th>
               <td>1 h 34 m</td>
               <td>
@@ -131,10 +156,10 @@
               </td>
               <td>
                 <img
-                  src="../assets/img/pelis/kung_fu_panda_four_xlg.jpg"
-                  width="60px"
+                  class="img-fluid img-thumbnail"
+                  width="80px"
                   height="80px"
-                  loading="lazy"
+                  src="../assets/img/pelis/kung_fu_panda_four_xlg.jpg"
                 />
               </td>
               <td>
