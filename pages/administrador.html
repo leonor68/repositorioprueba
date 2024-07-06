@@ -1,45 +1,67 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CINEMAFLEX</title>
+    <link rel="shortcut icon" href="../faviconn.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap_estilo.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CINEMAFLEX</title>
-  <link rel="shortcut icon" href="../faviconn.ico" type="image/x-icon" />
-  <link rel="stylesheet" href="../css/bootstrap.min.css" />
-  <link rel="stylesheet" href="../css/bootstrap_estilo.css" />
-</head>
+  <body class="body">
+    <header id="flecha" class="header">
+      <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+        <div class="container-fluid">
+          <a class="anclaLogo" href="../index.html">
+            <img
+              class="animacion"
+              src="../assets/img/285656_movie_icon.png"
+              alt="Logo de CINEMAFLEX"
+              width="40"
+              loading="lazy"
+            />
+            <span>CINEMAFLEX</span>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-<body class="body">
-  <header id="flecha" class="header">
-    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
-      <div class="container-fluid">
-        <a class="anclaLogo" href="../index.html">
-          <img class="animacion" src="../assets/img/285656_movie_icon.png" alt="Logo de CINEMAFLEX" width="40"
-            loading="lazy" />
-          <span>CINEMAFLEX</span>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="../index.html#Cartelera">Cartelera</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../pages/registrarse.html">-Registrarse</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../pages/iniciosesion.html">-Iniciar Sesión</a>
-            </li>
-          </ul>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul
+              class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end"
+            >
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  aria-current="page"
+                  href="../index.html#Cartelera"
+                  >Cartelera</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/registrarse.html"
+                  >-Registrarse</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/iniciosesion.html"
+                  >-Iniciar Sesión</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
-  </header>
+      </nav>
+    </header>
 
     <main id="flecha" class="mainAd">
       <h1 class="tituloAdministrador">Gestión de películas del portal</h1>
@@ -60,27 +82,37 @@
             ></div>
           </div>
 
-        <div class="mb-3 col-12 col-md-4">
-          <label for="duracion" class="form-label-c">Duración</label>
-          <input type="text" class="form-control" id="duracion" placeholder="2h 44m" name="duracion" />
-          <div id="duracionError" class="error-message"></div>
-        </div>
+          <div class="mb-3 col-12 col-md-4">
+            <label for="duracion" class="form-label-c">Duración</label>
+            <input
+              type="text"
+              class="form-control"
+              id="duracion"
+              placeholder="2h 44m"
+              name="duracion"
+            />
+            <div id="duracionError" class="error-message"></div>
+          </div>
 
-        <div>
-          <label for="sinopsis" class="form-label-c">Sinopsis</label>
-          <textarea class="form-control" id="resumen" name="resumen"></textarea>
-          <div id="resumenError" class="error-message"></div>
-        </div>
+          <div>
+            <label for="sinopsis" class="form-label-c">Sinopsis</label>
+            <textarea
+              class="form-control"
+              id="resumen"
+              name="resumen"
+            ></textarea>
+            <div id="resumenError" class="error-message"></div>
+          </div>
 
-        <div class="form-floating-image, boton-image, image-text">
-          <label for="imagen" class="form-label-c">Imagen</label>
-          <input type="file" class="form-control" id="imagen" name="imagen" />
-          <div id="imagenError" class="error-message"></div>
-        </div>
+          <div class="form-floating-image, boton-image, image-text">
+            <label for="imagen" class="form-label-c">Imagen</label>
+            <input type="file" class="form-control" id="imagen" name="imagen" />
+            <div id="imagenError" class="error-message"></div>
+          </div>
 
-        <!--<div class="input-group mb-3">-->
-        <!--<span class="input-group-text">Seleccionar archivo</span>-->
-        <!--<div class="form-floating-image, boton-image">
+          <!--<div class="input-group mb-3">-->
+          <!--<span class="input-group-text">Seleccionar archivo</span>-->
+          <!--<div class="form-floating-image, boton-image">
             <input
               type="file"
               id="imagen"
@@ -99,102 +131,103 @@
         </form>
       </section>
 
-    <section class="container mt-4">
-      <h2 class="listadoTitulo">Listado de Películas</h2>
-      <table class="table">
-        <thead class="encabezado">
-          <tr>
-            <th scope="col">Id_Pelicula</th>
-            <th scope="col">Titulo</th>
-            <th scope="col">Duracion</th>
-            <th scope="col">Sinopsis</th>
-            <th scope="col">Imagen</th>
-            <th scope="col">Acciones</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row"><a>1</a></th>
-            <th scope="row"><a>Kung Fu Panda 4</a></th>
-            <td>1 h 34 m</td>
-            <td>
-              <a>Sigue a Po e sus aventuras por la antigua China y descubre su
-                amor por el Kung Fu</a>
-            </td>
-            <td>
-              <img class="img-fluid img-thumbnail" width="80px" height="80px"
-                src="../assets/img/pelis/kung_fu_panda_four_xlg.jpg" />
-            </td>
-            <td>
-              <button type="button" class="botonModificar">Modificar</button><button type="button"
-                class="botonEliminar">Eliminar</button>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-    </section>
+      <section class="container mt-4 overList">
+        <h2 class="listadoTitulo">Listado de Películas</h2>
+        <table class="table">
+          <thead class="encabezado">
+            <tr>
+              <th scope="col">Id_Pelicula</th>
+              <th scope="col">Titulo</th>
+              <th scope="col">Duracion</th>
+              <th scope="col">Sinopsis</th>
+              <th scope="col">Imagen</th>
+              <th scope="col">Acciones</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row"><a>1</a></th>
+              <th scope="row"><a>Kung Fu Panda 4</a></th>
+              <td>1 h 34 m</td>
+              <td>
+                <a
+                  >Sigue a Po e sus aventuras por la antigua China y descubre su
+                  amor por el Kung Fu</a
+                >
+              </td>
+              <td>
+                <img
+                  class="img-fluid img-thumbnail"
+                  width="80px"
+                  height="80px"
+                  src="../assets/img/pelis/kung_fu_panda_four_xlg.jpg"
+                />
+              </td>
+              <td>
+                <button type="button" class="botonModificar">Modificar</button
+                ><button type="button" class="botonEliminar">Eliminar</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
 
-  </main>
- 
-  <footer class="footerPrincipio">
-    <nav class="navegacion">
-      <ul class="lista">
-        
+    <footer class="footerPrincipio">
+      <nav class="navegacion">
+        <ul class="lista">
+          <li><a>Encontranos acá</a></li>
+          <li>
+            <iframe
+              class="mapa"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4644.315050941971!2d-58.42634374798586!3d-34.60348719149188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca63db6a86bb%3A0x4d3f603380a2bc04!2sMedrano%20Y%20Corrientes!5e0!3m2!1ses!2sar!4v1712977962554!5m2!1ses!2sar"
+              width="150"
+              height="150"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </li>
+          <li><a>Términos y Condiciones</a></li>
+        </ul>
+        <ul class="redes">
+          <li>
+            <img
+              src="../assets/img/fa6-brands--square-x-twitter.svg"
+              alt="X"
+              loading="lazy"
+            />
+          </li>
+          <li>
+            <img
+              src="../assets/img/bxl--facebook-circle.svg"
+              alt="Facebook"
+              loading="lazy"
+            />
+          </li>
+          <li>
+            <img
+              src="../assets/img/logos--instagram-icon.svg"
+              alt="Instagram"
+              loading="lazy"
+            />
+          </li>
+        </ul>
+        <div>
+          <a href="#flecha">
+            <img
+              src="../assets/img/up-arrows_icon-icons.com_69819.png"
+              alt="ir arriba"
+              loading="lazy"
+            />
+          </a>
+        </div>
+      </nav>
+    </footer>
 
-        <li><a>Encontranos acá</a></li>
-        <li>
-          <iframe
-            class="mapa"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4644.315050941971!2d-58.42634374798586!3d-34.60348719149188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca63db6a86bb%3A0x4d3f603380a2bc04!2sMedrano%20Y%20Corrientes!5e0!3m2!1ses!2sar!4v1712977962554!5m2!1ses!2sar"
-            width="150"
-            height="150"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </li>
-        <li><a>Términos y Condiciones</a></li>
-      </ul>
+    <script src="../js/bootstrap.bundle.min.js"></script>
 
-      <ul class="redes">
-        <li>
-          <img
-            src="../assets/img/fa6-brands--square-x-twitter.svg"
-            alt="X"
-            loading="lazy"
-          />
-        </li>
-        <li>
-          <img
-            src="../assets/img/bxl--facebook-circle.svg"
-            alt="Facebook"
-            loading="lazy"
-          />
-        </li>
-        <li>
-          <img
-            src="../assets/img/logos--instagram-icon.svg"
-            alt="Instagram"
-            loading="lazy"
-          />
-        </li>
-      </ul>
-      <div>
-        <a href="#flecha">
-          <img
-            src="../assets/img/up-arrows_icon-icons.com_69819.png"
-            alt="ir arriba"
-            loading="lazy"
-          />
-        </a>
-      </div>
-    </nav>
-  </footer>
-
-  <script src="../js/bootstrap.bundle.min.js"></script>
-
-  <script src="../js/validacion_administrador.js"></script>
-</body>
-
+    <script src="../js/validacion_administrador.js"></script>
+  </body>
 </html>

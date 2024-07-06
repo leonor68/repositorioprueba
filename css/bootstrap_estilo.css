@@ -15,16 +15,15 @@
   background-color: #ffc107;
   border-radius: inherit;
 }
-.botonAdmin{
+.botonAdmin {
   background-color: #674d01;
   border: 1px black;
   border-radius: 5px;
-  padding:5px;
+  padding: 5px;
   align-self: center;
-  a{
-  color: #fff;
-  text-decoration: none;
-  
+  a {
+    color: #fff;
+    text-decoration: none;
   }
 }
 
@@ -576,7 +575,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-    /* height: 100%;*/
+  /* height: 100%;*/
   background-size: cover;
   background-position: center;
 
@@ -660,8 +659,8 @@
 
 @media screen and (width <=768px) {
   .inicioSesion {
-    background-image:url(../assets/img/9568482.jpg);
-    background-color:none;
+    background-image: url(../assets/img/9568482.jpg);
+    background-color: none;
     margin-left: 0px;
   }
   .ingresoSesion {
@@ -777,9 +776,16 @@
   }
 }
 
-.contendedorListado {
- 
+/**.contendedorListado {
   padding: 20px;
+}*/
+
+.container {
+  .mt-4 {
+    .overList {
+      overflow: auto;
+    }
+  }
 }
 
 .listadoTitulo {
@@ -787,8 +793,8 @@
   color: lightyellow;
 }
 .table {
-  overflow-y: hidden;
-  overflow-x: hidden;
+  /**overflow-y: hidden;*/
+  /**overflow-x: hidden;*/
   flex-wrap: nowrap;
   background-color: rgb(176, 90, 139);
   height: 600px;
@@ -835,7 +841,6 @@
   text-decoration: none;
 }
 @media screen and (width <=768px) {
-<<<<<<< HEAD
   .table {
     font-size: 0.8rem;
   }
@@ -853,28 +858,23 @@
     font-size: 0.5rem;
     margin-left: 0px;
   }
-=======
- 
-  
-    .table{
-      font-size: 0.8rem;
-    }
 
-    .botonModificar {
-      width: 70%;
-      text-align: center;
-      font-size: 0.5rem;
-      padding: 0px 0px 0px 0px;
-      margin-left: 0px;
-    }
-    .botonEliminar {
-      width: 70%;
-      text-align: center;
-      padding: 0px 0px 0px 0px;
-      font-size: 0.5rem;
-      margin-left: 0px;
-    }
-  
-  
->>>>>>> edu
+  .table {
+    font-size: 0.8rem;
+  }
+
+  .botonModificar {
+    width: 70%;
+    text-align: center;
+    font-size: 0.5rem;
+    padding: 0px 0px 0px 0px;
+    margin-left: 0px;
+  }
+  .botonEliminar {
+    width: 70%;
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+    font-size: 0.5rem;
+    margin-left: 0px;
+  }
 }
