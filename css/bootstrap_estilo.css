@@ -780,12 +780,9 @@
   padding: 20px;
 }*/
 
-.container {
-  .mt-4 {
-    .overList {
-      overflow: auto;
-    }
-  }
+.overList {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .listadoTitulo {
@@ -794,7 +791,7 @@
 }
 .table {
   /**overflow-y: hidden;*/
-  /**overflow-x: hidden;*/
+  overflow-x: auto;
   overflow: auto;
   flex-wrap: nowrap;
   background-color: rgb(176, 90, 139);
@@ -802,7 +799,7 @@
   margin-right: 50px;
 
   /**caption-side: bottom;*/
-  /**border-collapse: collapse*/
+  border-collapse: collapse;
   .encabezado {
     padding: 40px;
     font-size: 1rem;
@@ -844,6 +841,7 @@
 @media screen and (width <=768px) {
   .table {
     font-size: 0.8rem;
+    max-width: 90%;
   }
   .botonModificar {
     width: 70%;
