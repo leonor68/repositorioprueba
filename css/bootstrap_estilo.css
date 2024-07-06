@@ -776,38 +776,32 @@
   }
 }
 
-/**.contendedorListado {
-  padding: 20px;
-}*/
-
-.overList {
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-}
-
 .listadoTitulo {
   text-align: center;
   color: lightyellow;
 }
 .table {
-  /**overflow-y: hidden;*/
-  overflow-x: auto;
-  overflow: auto;
   flex-wrap: nowrap;
   background-color: rgb(176, 90, 139);
-  height: 600px;
-  margin-right: 50px;
+  height: auto;
 
-  /**caption-side: bottom;*/
-  border-collapse: collapse;
+  caption-side: bottom;
+  /**border-collapse: collapse;*/
   .encabezado {
-    padding: 40px;
-    font-size: 1rem;
+    padding: 20px;
+    font-size: 0.8rem;
   }
   .textoTabla {
     font-size: 0.8 rem;
     color: black;
   }
+}
+
+.th {
+  font-size: 0.5rem;
+}
+.td {
+  font-size: 0.5rem;
 }
 
 .botonModificar {
@@ -844,14 +838,14 @@
     max-width: 80%;
   }
   .botonModificar {
-    width: 70%;
+    width: 90%;
     text-align: center;
     font-size: 0.5rem;
     padding: 0px 0px 0px 0px;
     margin-left: 0px;
   }
   .botonEliminar {
-    width: 70%;
+    width: 90%;
     text-align: center;
     padding: 0px 0px 0px 0px;
     font-size: 0.5rem;
