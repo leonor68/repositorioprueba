@@ -795,6 +795,7 @@
 .table {
   /**overflow-y: hidden;*/
   /**overflow-x: hidden;*/
+  overflow: auto;
   flex-wrap: nowrap;
   background-color: rgb(176, 90, 139);
   height: 600px;
